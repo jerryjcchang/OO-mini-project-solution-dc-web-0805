@@ -36,7 +36,7 @@ class Recipe
   end
 
   def self.most_popular
-    self.all.sort{|recipe| recipe.users.length}[-1]
+    Recipe.all.sort{|recipe| recipe.users.length}[0]
   end
 
 end

@@ -32,6 +32,8 @@ Allergen.new(jc, pb)
 Allergen.new(ann, pb)
 Allergen.new(shannon, tuna_salad)
 
-jc.add_recipe_card(grilled_cheese, Time.now, )
+# Time.now is a built in Ruby method that provides a Date-Time object
+jc.add_recipe_card(grilled_cheese, Time.now, 5)
+shannon.add_recipe_card(ham_cheese, Time.now, 3)
 
 binding.pry
